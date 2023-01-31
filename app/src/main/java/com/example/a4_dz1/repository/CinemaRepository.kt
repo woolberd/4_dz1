@@ -5,10 +5,8 @@ import com.example.a4_dz1.model.HomeModel
 class CinemaRepository {
     private val cinemaModelList: ArrayList<HomeModel> = ArrayList()
 
-    init {
-        getListOfCinema()
-    }
         fun getListOfCinema(): ArrayList<HomeModel> {
+            cinemaModelList.clear()
             cinemaModelList.add(
                 HomeModel(
                     "https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2" +

@@ -3,15 +3,18 @@
 
     <item
         android:id="@+id/cinemaFragment"
-        android:title="cinema"/>
+        android:icon="@drawable/cinema"
+        android:title="@string/cinema" />
 
     <item
         android:id="@+id/catsFragment"
-        android:title="cat"/>
+        android:icon="@drawable/cat"
+        android:title="@string/cat"/>
 
     <item
         android:id="@+id/programmingLanguageFragment"
-        android:title="language"/>
+        android:icon="@drawable/lang"
+        android:title="@string/language"/>
 
 
 </menu>

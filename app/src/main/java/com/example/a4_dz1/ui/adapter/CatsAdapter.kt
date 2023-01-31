@@ -5,13 +5,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.a4_dz1.databinding.ItemNameBinding
-import com.example.a4_dz1.`interface`.OnClickItemListener
 import com.example.a4_dz1.model.HomeModel
 
 class CatsAdapter(
     private val listText: ArrayList<HomeModel>,
 ) : RecyclerView.Adapter<CatsAdapter.CatViewHolder>() {
-
 
     inner class CatViewHolder(private var binding: ItemNameBinding) :
         RecyclerView.ViewHolder(binding.root) {

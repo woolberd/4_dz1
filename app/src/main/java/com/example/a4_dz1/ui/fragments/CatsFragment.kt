@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.a4_dz1.databinding.FragmentCatsBinding
-import com.example.a4_dz1.`interface`.OnClickItemListener
 import com.example.a4_dz1.ui.adapter.CatsAdapter
 import com.example.a4_dz1.model.HomeModel
 import com.example.a4_dz1.repository.CatsRepository

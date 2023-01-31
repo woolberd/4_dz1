@@ -31,6 +31,7 @@ class CinemaFragment : Fragment(), OnClickItemListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        clear()
         initialize()
     }
 
@@ -38,6 +39,10 @@ class CinemaFragment : Fragment(), OnClickItemListener {
         binding.rvCinema.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
         textList.addAll(repo.getListOfCinema())
         binding.rvCinema.adapter = adapter
+    }
+
+    private fun clear(){
+        textList.clear()
     }
 
     override fun onClickItemListener(model: HomeModel) {

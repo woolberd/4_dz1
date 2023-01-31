@@ -8,13 +8,11 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.example.a4_dz1.databinding.FragmentDetailBinding
-import com.example.a4_dz1.model.HomeModel
 
 class DetailFragment : Fragment() {
 
     private lateinit var binding: FragmentDetailBinding
     private val args by navArgs<DetailFragmentArgs>()
-    private var model: HomeModel? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
