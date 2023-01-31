@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cinemaFragment">
+
+    <fragment
+        android:id="@+id/cinemaFragment"
+        android:name="com.example.a4_dz1.ui.fragments.CinemaFragment"
+        android:label="fragment_cinema"
+        tools:layout="@layout/fragment_cinema" >
+        <action
+            android:id="@+id/action_cinemaFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/catsFragment"
+        android:name="com.example.a4_dz1.ui.fragments.CatsFragment"
+        android:label="fragment_cats"
+        tools:layout="@layout/fragment_cats" >
+        <action
+            android:id="@+id/action_catsFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/programmingLanguageFragment"
+        android:name="com.example.a4_dz1.ui.fragments.ProgrammingLanguageFragment"
+        android:label="fragment_programming_language"
+        tools:layout="@layout/fragment_programming_language" >
+        <action
+            android:id="@+id/action_programmingLanguageFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.a4_dz1.ui.fragments.detailFragment.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="text"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="photo"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+
+</navigation>
